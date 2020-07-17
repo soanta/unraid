@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>baota</Name>
+  <Repository>pch18/baota:lnp</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5018]/</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1594990528</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5020</HostPort>
+        <ContainerPort>20</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5021</HostPort>
+        <ContainerPort>21</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5008</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>888</HostPort>
+        <ContainerPort>888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5018</HostPort>
+        <ContainerPort>8888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9527</HostPort>
+        <ContainerPort>9527</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/www/wwwroot/</HostDir>
+      <ContainerDir>/www/wwwroot</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/www/panel/</HostDir>
+      <ContainerDir>/www/server/panel/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/media/</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="wwwroot" Target="/www/wwwroot" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /www/wwwroot" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/www/wwwroot/</Config>
+  <Config Name="panel" Target="/www/server/panel/" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /www/panel" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/www/panel/</Config>
+  <Config Name="media" Target="/media" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /media" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/</Config>
+  <Config Name="20" Target="20" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 20" Type="Port" Display="always" Required="false" Mask="false">5020</Config>
+  <Config Name="21" Target="21" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 21" Type="Port" Display="always" Required="false" Mask="false">5021</Config>
+  <Config Name="443" Target="443" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 443" Type="Port" Display="always" Required="false" Mask="false">5443</Config>
+  <Config Name="80" Target="80" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="false" Mask="false">5008</Config>
+  <Config Name="888" Target="888" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 888" Type="Port" Display="always" Required="false" Mask="false">888</Config>
+  <Config Name="8888" Target="8888" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8888" Type="Port" Display="always" Required="false" Mask="false">5018</Config>
+  <Config Name="9527" Target="9527" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 9527" Type="Port" Display="always" Required="false" Mask="false">9527</Config>
+</Container>
